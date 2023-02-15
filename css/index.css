@@ -1,0 +1,144 @@
+
+@import '/css/sent.css';
+
+:root { 
+  --bg: #fec7d7; 
+  --white: #ffffff; 
+  --purple: #a786df; 
+  --blue-dark: #0e172c; 
+  --h1: 700 1.625rem/2rem Inter; 
+  --body1-regular: 400 1rem/1.5rem Inter; 
+  --body1-bold: 700 1rem/1.5rem Inter;    
+}
+
+body {
+  font: var(--h1);
+  margin: 0;
+  background-color: var(--bg);
+  
+}
+
+h1{
+  font: var(--h1);
+  color: var(--purple);
+}
+
+h2{
+  font: var(--h1);
+  color: var(--blue-dark);
+  margin: 0;
+}
+
+p{
+  color: var(--blue-dark);
+  font: var(--body1-regular);
+  opacity: 0.8;
+}
+
+.wrapper {
+  max-width:426px ;
+  min-width:328px ;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.inactive {
+  display: none;
+}
+
+.survey-component {
+  box-sizing: border-box;
+  width: 328px;
+  height: 334px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 2.35334px solid var(--blue-dark);
+  box-shadow: 4.70669px 4.70669px 0px var(--blue-dark);
+  border-radius: 14px;
+  background-color: var(--white);
+}
+
+.survey-component form .elements {
+  display: flex;
+  justify-content:space-between;
+
+  margin: 24px 0;
+}
+
+
+.option {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--blue-dark);
+  border-radius: 58.8336px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--blue-dark);
+}
+
+.option:hover {
+  background-color: var(--purple);
+  cursor: pointer;
+  position: relative;
+  bottom: 4px;
+}
+
+.option:focus {
+  background-color: var(--blue-dark);
+  cursor: pointer;
+  color: var(--white);
+}
+
+.survey-component form .send{
+  width: 280px;
+  height: 47.53px;
+  border-radius: 117.667px;
+  color: var(--white);
+  background-color: var(--blue-dark);
+  font: var(--body1-bold);
+  border: none;
+  text-align: center;
+}
+
+.survey-component form .send:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+
+
+.debugin {
+  border: 3px solid red;
+}
+
+
+@media (min-width:750px) {
+  .survey-component {
+    width: 426px;
+    height: 397px;
+    padding:40px;
+    border-radius: 14px;
+  }
+
+  .survey-component form .elements {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  .option {
+    width: 56px;
+    height: 56px;
+  }
+
+  .survey-component form .send {
+    width: 346px;
+    height: 47.53px;
+  }
+
+}

@@ -1,0 +1,31 @@
+.sent-component{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 328px;
+  height: 360px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 2.35334px solid var(--blue-dark);
+  box-shadow: 4.70669px 4.70669px 0px var(--blue-dark);
+  border-radius: 14px;
+  background-color: var(--white);
+}
+
+.sent-component h2 {
+  font: var(--h1);
+}
+
+.sent-component p {
+  font: var(--body1-regular);
+}
+
+@media (min-width:750px) {
+  .sent-component{
+    width: 426px;
+    height: 397px;
+    padding:40px;
+    border-radius: 14px;
+  }
+}
